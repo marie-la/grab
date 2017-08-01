@@ -2,25 +2,14 @@ import sys
 import pyperclip
 import os
 
-'''
-Simple working memory extension! This will work best if 1) you can quickly access
-a terminal via keyboard shortcut and 2) you can bind 'grab' to 'python [directory of this file] $argv'
-"
-
-Set word: 'grab [term] "[mapping]"' or just 'grab [term]'
-    ex: 'grab marie marie@email.com'
-
-Get word: 'grab [term]'
-
-Don't remember the key word? 'grab'
-'''
 
 fname = 'tidbits.txt'
 dir_path = os.path.dirname(os.path.realpath(__file__))
 fpath = os.path.join(dir_path+'/', fname)
 tidbits = {}
 
-with open(fpath) as f:
+#looks like I could have used pickle, but this works and is human readable.
+with open(fpath, 'rw') as f:
     content = f.readlines()
 
 for line in content:
