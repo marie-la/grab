@@ -18,6 +18,8 @@ Set word: 'grab [term] "[mapping]"' or just 'grab [term]'
 
 Get word: 'grab [term]'
 
+Delete keypair: 'grab del [term]'
+
 Forgot key word? 'grab' to see all
 ```
 
