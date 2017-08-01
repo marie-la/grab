@@ -21,8 +21,16 @@ Get word: 'grab [term]'
 Forgot key word? 'grab' to see all
 ```
 
+Requirements:
+'''
+pyperclip, os, sys
+
+'''
+
 TODO:
 - [ ] add encryption option
 - [ ] improve searching for lost keyword
-- [ ] implement deleting keyterm
 - [ ] 'undo' for accidentally overwriting term
+
+Improvements:
+- [x] implement deleting keyterm
