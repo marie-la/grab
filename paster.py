@@ -19,7 +19,8 @@ for line in content:
 
 if __name__ == '__main__':
     if len(sys.argv) == 1:
-        print tidbits.keys()
+        keys = tidbits.keys()
+        print sorted(keys, key=lambda x: x.lower())
     if len(sys.argv) == 2:
         if sys.argv[1] in tidbits:
             pyperclip.copy(tidbits[sys.argv[1]])
