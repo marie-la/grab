@@ -23,7 +23,9 @@ Forgot key word? 'grab' to see all
 
 Requirements:
 ```
-pyperclip, os, sys
+python 2.7.*
+pickle
+pyperclip
 
 ```
 
