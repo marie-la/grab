@@ -3,7 +3,6 @@ import pyperclip
 import pickle
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
-print dir_path
 
 try:
     tidbits = pickle.load(open(dir_path+'/tidbits.p', 'rw'))
@@ -19,8 +18,11 @@ if __name__ == '__main__':
 
     #delete keypair
     elif sys.argv[1] == 'del':
-        del tidbits[sys.argv[2]]
-
+        keyword = sys.argv[2]
+        if keyword in tidbits:
+            del tidbits[sys.argv[2]]
+        else:
+            print "No value to remove"
     else:
         keyword = sys.argv[1]
         if len(sys.argv) == 2:
