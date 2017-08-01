@@ -1,6 +1,6 @@
-Grab is a simple working memory extension.
+## Grab is a simple working memory extension.
 
-This will work best if
+This will work best if:
 1) you can quickly access a terminal via keyboard shortcut
 2) you can bind 'grab' to 'python [path to python file] $argv'
 
@@ -22,7 +22,7 @@ Forgot key word? 'grab' to see all
 ```
 
 TODO:
-- [] add encryption option
-- [] improve searching for lost keyword
-- [] implement deleting keyterm
-- [] 'undo' for accidentally overwriting term
+- [ ] add encryption option
+- [ ] improve searching for lost keyword
+- [ ] implement deleting keyterm
+- [ ] 'undo' for accidentally overwriting term
