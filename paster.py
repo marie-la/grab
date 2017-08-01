@@ -3,12 +3,13 @@ import pyperclip
 import pickle
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
+print dir_path
 
 try:
-    tidbits = pickle.load(open(dir_path+'tidbits.p', 'rw'))
+    tidbits = pickle.load(open(dir_path+'/tidbits.p', 'rw'))
 except:
     tidbits = {}
-    open(dir_path+'tidbits.p', 'wb')
+    open(dir_path+'/tidbits.p', 'wb')
 
 if __name__ == '__main__':
     #print all keys
@@ -39,4 +40,4 @@ if __name__ == '__main__':
                 val = sys.argv[2]
                 tidbits[keyword] = val
 
-pickle.dump(tidbits, open(dir_path+'tidbits.p', 'w'))
+pickle.dump(tidbits, open(dir_path+'/tidbits.p', 'w'))
