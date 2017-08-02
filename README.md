@@ -35,7 +35,8 @@ TODO:
 * add encryption option
 * improve searching for lost keyword
 * 'undo' for accidentally overwriting term
-* namespace system for shorter keywords 
+* namespace system for shorter keywords
+* add 'help' page
 
 Improvements:
-* *8/1* implement deleting keyterm
+* *8/1/17* implement deleting keyterm

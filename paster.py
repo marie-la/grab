@@ -23,6 +23,14 @@ if __name__ == '__main__':
             del tidbits[sys.argv[2]]
         else:
             print "No value to remove"
+
+    elif sys.argv[1] == 'backup':
+        f = open(dir_path + '/backup.p', 'wb')
+        pickle.dump(tidbits, f)
+        print 'Backed up to ' + dir_path
+
+    elif sys.argv[1] == 'restore':
+        tidbits = pickle.load(open(dir_path+'/backup.p', 'rw'))
     else:
         keyword = sys.argv[1]
         if len(sys.argv) == 2:
