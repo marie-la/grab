@@ -30,7 +30,10 @@ if __name__ == '__main__':
         print 'Backed up to ' + dir_path
 
     elif sys.argv[1] == 'restore':
-        tidbits = pickle.load(open(dir_path+'/backup.p', 'rw'))
+        try:
+            tidbits = pickle.load(open(dir_path+'/backup.p', 'rw'))
+        except:
+            print 'No backup! Use \'grab backup\' to backup keypair file first.'
     else:
         keyword = sys.argv[1]
         if len(sys.argv) == 2:
